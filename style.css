@@ -1,0 +1,18 @@
+:root{
+    --dark_grey: #484848;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    display: flex;
+    text-decoration: none;
+    margin-inline: 20px;
+    margin-block: 30px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark_grey);
+}
