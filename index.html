@@ -13,23 +13,32 @@
     </header>
     <main>
         <div class="main__statictics">
-            <span>Всего:</span><span class="main__statistic__count" id="statistic__total">0</span>
-            <span>Просмотрено:</span><span class="main__statistic__count" id="statistic__watched">0</span>
-            <span>Не просмотрено:</span><span class="main__statistic__count" id="statistic__not__watched">0</span>
+            <span>Всего:</span><span class="main__statistic__count" id="statistic_total">0</span>
+            <span>Просмотрено:</span><span class="main__statistic__count" id="statistic_watched">0</span>
+            <span>Не просмотрено:</span><span class="main__statistic__count" id="statistic_not_watched">0</span>
         </div>
         <form class="add__form" id="add_form">
             <div class="info">
                 <label for="film__name">Название фильма:</label>
-                <input type="text" name="film__name" id="film__name" placeholder="Введите название">
+                <input type="text" name="film__name" id="film_name" placeholder="Введите название">
             </div>
             <div class="info">
                 <label for="film__year">Год выхода:</label>
-                <input type="text" name="film__year" id="film__year" placeholder="Введите год">
+                <input type="text" name="film__year" id="film_year" placeholder="Введите год">
             </div>
             <div class="action">
                 <button>Добавить фильм</button>
             </div>
         </form>
+        <div class="error" id="error_messege"></div>
+        <div class="filter" id="filter">
+            <div class="filter__group">
+                <button class="filter__group__btn active_btn" id="btn_total">Все</button>
+                <button class="filter__group__btn" id="btn_watched">Просмотренные</button>
+                <button class="filter__group__btn" id="btn_not_watched">Не просмотренные</button>
+            </div>
+        </div>
+        <div class="list__movie" id="list_movie"></div>
     </main>
 </body>
 </html>
